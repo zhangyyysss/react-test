@@ -17,7 +17,7 @@
 //   }
 // }
 
-               const person = {
+                 const person = {
   name: '小明',
   age: '22'
 }
