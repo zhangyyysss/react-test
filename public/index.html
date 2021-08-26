@@ -2,17 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!--  PUBLIC_URL代表public文件夹的路径 -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- 开启理想视口, 用于移动端页面的适配  -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 用于配置浏览器页签+地址栏的颜色(仅仅支持安卓手机浏览器) -->
     <meta name="theme-color" content="#000000" />
+    <!-- 描述,用于搜索引擎优化 -->
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
+    <!-- apple-touch-icon 网页添加到主屏上后的icon图标,只支持苹果手机 -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- 
+      应用加壳?最后(html + css + js),我们写完.html 套一个安卓的壳,变成一个手机上的应用.apk  
+      react-native 也可以用于开发移动端!ios/android
+
+      壳里面就是内嵌了一个网页,webview?
+
+      在移动端安装了程序之后,manifest.json的意思就是提供.apk的名字图标等等信息,和获取移动端手机的信息
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
@@ -27,6 +40,7 @@
     <title>React App</title>
   </head>
   <body>
+    <!-- noscript?是干嘛的?如果浏览器不支持js脚本运行,就可以展示noscript中的内容 -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
